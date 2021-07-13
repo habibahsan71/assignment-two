@@ -76,7 +76,7 @@ transform: scale(1.1);
  .player{
      padding: 15px;
      border:15px #FFFFFF;
-     box-shadow: #e4e1e1 0px 0px 40px;
+     box-shadow: #e4e0e0 0px 0px 40px;
  }
  p{
      color: #6C6C6C;
@@ -116,7 +116,7 @@ transform: scale(1.1);
     margin: auto;
     margin-bottom: 50px;
 }
- .contact-info img{
+.contact-info img{
 width: 250px;
 align-items: center;
 justify-content: center;
