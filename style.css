@@ -111,12 +111,12 @@ z-index: 2;
      padding: 10px;
      box-shadow: darkgray 0px 1px 30px;
      margin-bottom: 20px;
-     text-align: center;
+     text-align: left;
      
  }
  .performers img{
      margin-right: 5px;
-     width: 100px;
+     width: 120px;
  }
  .player-name{
      margin-right:10px;
@@ -179,14 +179,27 @@ justify-content: center;
     height: 32px;
     width: 32px; 
     text-align: center;
-    margin-right: 14px;
+    margin-right: 12px;
     
 }
 .fab{
-    margin-top: 10px;
+    margin-top: 8px;
     color: rgb(116, 122, 116);
 }
+.fa-facebook{
+    color: rgb(16, 137, 250)
+}
+.fa-instagram{
+color: #fa1b1b
+}
+.fa-twitter{
+color: rgb(48, 188, 253)
+}
+.fa-weixin{
+color: rgb(9, 201, 9)
+}
 .copyright-text{
+    font-weight: ;
     text-align: center;
     margin-top: 0px;
 }
@@ -194,27 +207,91 @@ justify-content: center;
 Media Queries 
 ---------------*/
 @media only screen and (max-width:688px) {
+    /*--------------
+     Header section 
+     ---------------*/
+    body{
+        width: fit-content;
+    }
     .container{
       flex-direction: column;
-      width: auto;
-        height: 695px;
+        width: 360px;
+      height: 670px;
+      
   } 
   .banner-text{
-      text-align: center;
-      margin-left: 18px;
+      width: 278px;
+      text-align: left;
+      margin-left: 38px;
       font-size: 36px;
+      margin-bottom: 30px;
   }
+  .button a{
+      margin-left: 10px;
+      margin-bottom: 50px;
+  }
+  .banner img{
+      margin-top: 50px;
+      width: 329px;
+      height: 259px;
+
+  }
+  /*------------ 
+  Main section
+  ------------- */
   .grid-container{
       width: auto;
       grid-template-columns: repeat(1, 1fr);
+      margin-left: 14px;
   } 
   .performers{
       width: auto;
   }
-  .footer-logo{
-      align-items: left;
+  .best-performers{
+      width: 330px;
+      height: 474px;
+      align-items: center;
+      margin-left: 15px;
   }
   .social-btn{
       width: auto;
   }
+  .player{
+      width: 300px;
+      height: 474px; 
+      padding:15px;
+  }
+  .player img{
+      width: 300px;
+      height: 256px;
+  }
+  .performence-title{
+      width: 330px;
+  }
+  .contact-info{
+      text-align: center;
+      margin-left: 15px;
+      padding-left: 0;
+      width: 360px;
+  }
+  .contact-image{
+      width: 150px;
+      display: unset;
+  }
+  /* Footer Section */
+  .footer-container{
+      width: 330px;
+      margin-left: 45px;
+  }
+  .footer-image img{
+    width: 275px;
+  }
+  .copyright-text{
+      width: 236px;
+      height: 31px;
+      font-weight: 400px;
+      text-align: center;
+      margin-left: 62px;
+  }
+}
 }
