@@ -18,10 +18,6 @@ Starting Heading
     align-items: center;
     justify-content: center;
 }
-/* .banner-title{
-    margin-left: 100px;
-    margin-right: 120px;
-} */
 .banner-text{
     color: #FFFFFF;
     width: 485px;
@@ -38,24 +34,22 @@ Starting Heading
 .banner:hover{
   transform: scale(1.3);
 }
-.button{
+.button, a{
     color: #FFFFFF;
+    text-decoration: none;
     width: 168px;
     height: 44px;
-    padding: 10px 24px;
+    padding: 10px;
     font-size: 16px;
     font-weight: 500;
     background-color: #E02C6D;
-    width: 168px;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: 1s;
     transition-duration: 0.2s;
 }
 .button:hover,  button:active{
 box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 transform: scale(1.3);
-z-index: 2;
 }
 .fas{
     margin-left: 8px;
@@ -122,7 +116,7 @@ z-index: 2;
      margin-right:10px;
  }
  /* ---------------
- Register Section
+ Main Section: Register
  ------------------- */
 .contact-info{
     width: 600px;
@@ -227,7 +221,7 @@ Media Queries
       margin-bottom: 30px;
   }
   .button a{
-      margin-left: 10px;
+      margin-left: 20px;
       margin-bottom: 50px;
   }
   .banner img{
@@ -278,7 +272,9 @@ Media Queries
       width: 150px;
       display: unset;
   }
-  /* Footer Section */
+  /*--------------
+  Footer Section 
+  ---------------*/
   .footer-container{
       width: 330px;
       margin-left: 45px;
