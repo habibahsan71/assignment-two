@@ -10,7 +10,7 @@ body{
 /* -------------
 Starting Heading 
 -----------------*/
-header{
+.container{
     width: 100%;
     height: 677px;
     background-color: #2D25A0;
@@ -18,18 +18,25 @@ header{
     align-items: center;
     justify-content: center;
 }
-.banner-title{
+/* .banner-title{
     margin-left: 100px;
     margin-right: 120px;
-}
+} */
 .banner-text{
     color: #FFFFFF;
     width: 485px;
     font-size: 64px;
+    margin-right: 102px;
     
+}
+.banner{
+    transition: 1s;
 }
 .banner img{
     width: 556.01px;
+}
+.banner:hover{
+  transform: scale(1.3);
 }
 .button{
     color: #FFFFFF;
@@ -41,16 +48,14 @@ header{
     background-color: #E02C6D;
     width: 168px;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* -webkit-transition-duration: 0.3s; */
-    transition-duration: 0.3s;
-    /* -webkit-transition-property: box-shadow, transform; */
-    transition-property: box-shadow, transform;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    transition-duration: 0.2s;
 }
-.button:hover, button:focus, button:active{
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
--webkit-transform: scale(1.1); 
-transform: scale(1.1);
+.button:hover,  button:active{
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+transform: scale(1.3);
+z-index: 2;
 }
 .fas{
     margin-left: 8px;
@@ -58,7 +63,7 @@ transform: scale(1.1);
     height: 24px;
 }
 /*---------------
- Main-> 1section:Grid 
+ Main-> section-1:Grid 
  ---------------*/
 
 .grid-container{
@@ -83,6 +88,7 @@ transform: scale(1.1);
  }
  hr{
      margin-top: 100px;
+     margin-bottom: 50px;
      width: 800px;
  }
 
@@ -95,21 +101,29 @@ transform: scale(1.1);
      font-size: 2.0em;
  }
  .performers{
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
      width: 1054px;
      margin:auto;
      margin-bottom: 50px;
+     
  }
  .best-performers{
+     display: flex;
      padding: 10px;
-     width: 300px;
      box-shadow: darkgray 0px 1px 30px;
+     margin-bottom: 20px;
+     text-align: center;
      
  }
  .performers img{
-     width: 300px;
+     margin-right: 5px;
+     width: 100px;
  }
+ .player-name{
+     margin-right:10px;
+ }
+ /* ---------------
+ Register Section
+ ------------------- */
 .contact-info{
     width: 600px;
     text-align: center;
@@ -122,7 +136,7 @@ align-items: center;
 justify-content: center;
  }
  .email{
-     color: snow;
+     color: rgb(0, 0, 0);
      font-size: 20px;
      width: 300px;
      background-color: rgb(255, 255, 255);
@@ -136,3 +150,71 @@ justify-content: center;
      border-radius: 2px;
      cursor: pointer;
  }
+ /*-----------------
+  Footer Section 
+  -----------------*/
+  .footer-container{
+    width: 483px;
+    height: 213px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .footer-image img{
+  width: 483px;
+  margin-bottom: 20px;
+  }
+  .social{
+      display: flex;
+      list-style: none;
+      width: 170px;
+      height: 32px;
+      margin: auto;
+      text-align: center;
+  }
+.social-btn{
+    background-color: rgb(216, 216, 216);
+    border-radius: 50%;
+    height: 32px;
+    width: 32px; 
+    text-align: center;
+    margin-right: 14px;
+    
+}
+.fab{
+    margin-top: 10px;
+    color: rgb(116, 122, 116);
+}
+.copyright-text{
+    text-align: center;
+    margin-top: 0px;
+}
+/* ------------
+Media Queries 
+---------------*/
+@media only screen and (max-width:688px) {
+    .container{
+      flex-direction: column;
+      width: auto;
+        height: 695px;
+  } 
+  .banner-text{
+      text-align: center;
+      margin-left: 18px;
+      font-size: 36px;
+  }
+  .grid-container{
+      width: auto;
+      grid-template-columns: repeat(1, 1fr);
+  } 
+  .performers{
+      width: auto;
+  }
+  .footer-logo{
+      align-items: left;
+  }
+  .social-btn{
+      width: auto;
+  }
+}
